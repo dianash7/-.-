@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+.heder {
+  margin-bottom: 10px;
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .row {
+  height: 1%;
+}
+.row {
+  display: block;
+}
+/* close commented backslash hack */
+.page {
+  overflow: hidden;
+  display: grid;
+  grid-template: "header" "content" "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  font-size: 90px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgb(6, 52, 11);
+  font-family: cursive;
+}
+nav {
+  margin: 27px auto 0;
+  position: relative;
+  width: 1220px;
+  height: 50px;
+  background-color: rgb(6, 52, 11);
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  text-shadow: 2px 2px 4px #afaf23;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #daa520;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 170px;
+}
+a:nth-child(2) {
+  width: 170px;
+}
+a:nth-child(3) {
+  width: 170px;
+}
+a:nth-child(4) {
+  width: 170px;
+}
+a:nth-child(5) {
+  width: 170px;
+}
+a:nth-child(6) {
+  width: 170px;
+}
+a:nth-child(7) {
+  width: 170px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 170px;
+  left: 0;
+  background-color: #0a4f0ab1;
+}
+nav .start-home,
+a:nth-child(2):hover ~ .animation {
+  width: 170px;
+  left: 170px;
+  background-color: #0a4f0ab1;
+}
+nav .start-home,
+a:nth-child(3):hover ~ .animation {
+  width: 170px;
+  left: 340px;
+  background-color: #0a4f0ab1;
+}
+nav .start-home,
+a:nth-child(4):hover ~ .animation {
+  width: 170px;
+  left: 510px;
+  background-color: #0a4f0ab1;
+}
+nav .start-home,
+a:nth-child(5):hover ~ .animation {
+  width: 170px;
+  left: 680px;
+  background-color: #0a4f0ab1;
+}
+nav .start-home,
+a:nth-child(6):hover ~ .animation {
+  width: 180px;
+  left: 850px;
+  background-color: #0a4f0ab1;
+}
+nav .start-home,
+a:nth-child(7):hover ~ .animation {
+  width: 180px;
+  left: 1040px;
+  background-color: #0a4f0ab1;
+}
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: url(https://pibig.info/uploads/posts/2022-01/1643346878_2-pibig-info-p-restoran-v-lesu-priroda-krasivo-foto-2.jpg);
+}
+p {
+  text-align: center;
+  margin: 30px 0 30px;
+  font-size: 2em;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgb(6, 52, 11);
+  font-family: cursive;
+}
+.content {
+  width: 35%;
+  float: left;
+}
+.inner-content {
+  min-height: 500px;
+}
+.sidebar-1 {
+  width: 32.5%;
+  float: left;
+  padding-right: 40px 20px;
+}
+.inner-sidebar-1 {
+  min-height: 500px;
+}
+.sidebar-2 {
+  width: 32.5%;
+  float: left;
+  padding-left: 40px 20px;
+}
+.inner-sidebar-2 {
+  min-height: 500px;
+}
+.footer {
+  margin-top: 10px;
+}
+.inner-footer {
+  height: 200px;
+}
+
+.col-main {
+  width: 50%;
+  float: left;
+  padding: 20px 2.5%;
+}
+
+.col-sidebar {
+   width: 50%;
+   float: right;
+   padding: 20px 2.5%;
+}
+h2 {
+  text-align: center;
+  margin: 30px 0 30px;
+  font-size: 20px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgb(6, 52, 11);
+  font-family: cursive;
+}
+#main-block {
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  display: block;
+  margin: auto;
+  width: 1250px;
+  height: 750px;
+  border: 3px solid #ffd700;
+  border-radius: 8px;
+  background-image: url("/photo-1.jpg");
+  background-size: cover;
+}
+#main-block1 {
+  border: 5px solid #afaf23;
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+  margin-top: 20vh;
+  background-image: url(https://mayak.rest/wp-content/uploads/FOX02822_.jpg);
+  background-size: cover;
+}
+#left-button {
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #afaf23;
+	border-bottom: 25px solid transparent;
+  display: inline-block;
+  margin: 10px;
+}
+#right-button {
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #afaf23;
+	border-bottom: 25px solid transparent;
+  float: right;
+  margin: 10px;
+}
+#main-block2 {
+  border: 5px solid #afaf23;
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+  margin-top: 20vh;
+  background-image: url(https://mayak.rest/wp-content/uploads/FOX02752.jpg);
+  background-size: cover;
+}
+#main-block3 {
+  border: 5px solid #afaf23;
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+  margin-top: 20vh;
+  background-image: url(https://mayak.rest/wp-content/uploads/FOX03011.jpg);
+  background-size: cover;
+}
+#main-block4 {
+  border: 5px solid #afaf23;
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+  margin-top: 20vh;
+  background-image: url(https://mayak.rest/wp-content/uploads/FOX03044.jpg);
+  background-size: cover;
+}
+#main-block5 {
+  border: 5px solid #afaf23;
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+  margin-top: 20vh;
+  background-image: url(https://mayak.rest/wp-content/uploads/FOX03080.jpg);
+  background-size: cover;
+}
+#main-block6 {
+  border: 5px solid #afaf23;
+  border-radius: 15 px rgb(6, 52, 11);
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+  margin-top: 20vh;
+  background-image: url(https://mayak.rest/wp-content/uploads/1.jpg);
+  background-size: cover;
+}
